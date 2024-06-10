@@ -20,5 +20,7 @@ namespace MyPortfolio.DAL.Context
         public DbSet<Skill> Skills { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<Testimonial> Testimonials  { get; set; }
+        public DbSet<ToDoList> ToDoLists  { get; set; }// Oluşturduğumuz yeni tabloyu migrastiona eklemek için önce contexte ekliyoruz. Add migation * Migration adı* ile mig oluşturupo sonrasında ise updatge-migration ile bunun sql ile olan ilkişkisini gerçekleştiriyoruz.
+
     }
 }
